@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# 🐶 동물 카드 뒤집기 게임 (Animal Memory Card Game)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+아이들이 쉽고 재미있게 즐길 수 있는  
+**동물 카드 매칭(기억력) 게임 웹사이트**입니다.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎮 게임 소개
+- 4x4 카드 뒤집기 게임
+- 같은 동물 카드 2장을 맞추면 성공
+- 모든 카드를 맞추면 게임 클리어 🎉
+- PC / 모바일 브라우저에서 실행 가능
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ 주요 기능
+- 🧠 기억력 카드 매칭 게임
+- ⏱ 게임 시작 시 약 1초간 전체 카드 공개
+- 🔊 카드 뒤집기 효과음
+- 🔁 언제든 가능한 다시하기 버튼
+- 🪟 모든 카드 매칭 시 성공 모달 표시
+- 📱 모바일 / 태블릿 / PC 반응형 UI 지원
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 사용 기술 스택
+- React – 게임 화면 구성 및 상태 관리
+- TypeScript – 코드 안정성 및 가독성 향상
+- Vite – 빠른 개발 서버 및 빌드 환경
+- CSS – 카드 애니메이션 및 UI 스타일링
+- Web Audio API – 효과음 처리
+- Git / GitHub – 버전 관리
+- Vercel – 웹사이트 배포
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 실행 방법 (로컬 환경)
+```bash
+npm install
+npm run dev
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🌍 배포 주소
+https://animal-card-game.vercel.app
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🤖 AI 활용
+본 프로젝트는 개발 과정에서 AI(Codex)를 활용하여 진행했습니다.
+
+- 기능 단위 요구사항을 정리한 후 AI에 전달
+- AI가 제안한 코드 변경 사항을 검토 후 직접 선택(Merge)
+
+AI를 단순 자동 생성 도구가 아닌,  
+보조 개발 도구로 활용하며 최종 판단과 통제는 직접 수행했습니다.
