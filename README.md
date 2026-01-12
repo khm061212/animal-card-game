@@ -42,7 +42,7 @@ npm run dev
 ---
 
 ## 🌍 배포 주소
-https://animal-card-game.vercel.app
+- [https://animal-card-game-site.vercel.app](https://animal-card-game-site.vercel.app/)
 
 ---
 
